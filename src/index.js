@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const DATA = [
+  {id : 1 , name :'Eat' ,completed: true },
+  {id : 2 , name :'Slppe' ,completed: false },
+  {id : 3 , name :'Repeat' ,completed: false }
+]
+
 ReactDOM.render(
   <React.StrictMode>
     <App subject= "ReactJS" />
