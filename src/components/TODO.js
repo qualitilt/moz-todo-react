@@ -1,5 +1,5 @@
 import React from "react";
-export default function Todo(props){
+function Todo(props){
     const subject = props.name;
     return(
         <li className="todo stack-small">
@@ -20,3 +20,5 @@ export default function Todo(props){
         </li>
     );
 };
+
+export default Todo;
