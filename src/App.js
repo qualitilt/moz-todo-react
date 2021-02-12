@@ -5,6 +5,9 @@ import FilterButton from './components/FilterButton'
 
 
 function App(props) {
+  function addTask(name){
+    alert(name);
+  }
   const taskList = props.tasks.map((val)=> 
   <Todo 
     id=  {val.id} 
@@ -16,7 +19,7 @@ function App(props) {
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
-      <Form />
+      <Form addTask={addTask}/>
       <FilterButton />
       <h2 id="list-heading">
         3 tasks remaining
