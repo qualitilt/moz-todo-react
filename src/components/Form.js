@@ -8,7 +8,8 @@ function Form(props){
 
   function handleSubmit(e){
     e.preventDefault();
-    alert(name);
+    props.addTask(name);
+    setName('');
   }
     return(
         <form onSubmit = {handleSubmit}>
