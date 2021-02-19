@@ -1,11 +1,14 @@
 import React,{useState} from "react";
 
 function Form(props){
-  const[name, setName] = useState('we are using hook!');
+  const[name, setName] = useState('');
+  function handleChange(e){
+    setName(e.target.value);
+  }
 
   function handleSubmit(e){
     e.preventDefault();
-    alert(props.addTask);
+    alert(name);
   }
     return(
         <form onSubmit = {handleSubmit}>
@@ -21,6 +24,7 @@ function Form(props){
           name="text"
           autoComplete="off"
           value = {name}
+          onChange = {handleChange}
         />
         <button type="submit" className="btn btn__primary btn__lg">
           Add
