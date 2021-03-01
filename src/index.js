@@ -10,7 +10,7 @@ const DATA = [
   {id : 3 , name :'Repeat' ,completed: false }
 ]
 
-ReactDOM.render(<App tasks={DATA} />, 
+ReactDOM.render(<App tasks = {DATA} />, 
   document.getElementById("root")
 );
 
